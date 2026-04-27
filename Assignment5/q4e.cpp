@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
-
 class A {
 public:
     void showA() {
-        cout << "Class A" << endl;
+        cout << "Class A\n";
     }
 };
 
@@ -14,7 +13,7 @@ class C : public A {};
 class D : public B, public C {
 public:
     void showD() {
-        cout << "Class D" << endl;
+        cout << "Class D\n";
     }
 };
 

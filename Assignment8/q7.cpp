@@ -38,7 +38,7 @@ template <typename T> class Queue {
     void display() {
         for (int i = front; i <= rear; i++)
             cout << arr[i] << " ";
-        cout << endl;
+        cout << "\n";
     }
 };
 

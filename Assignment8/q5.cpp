@@ -20,10 +20,10 @@ T LS(T arr[], int n, int a){
 
 int main(){
     int arr[]={4,3,5,16,8,10};
-    cout<<"sorted:"<<LS(arr, 6, 5)<<endl;
+    cout<<"sorted:"<<LS(arr, 6, 5)<<"\n";
 
     float b[] = {2.5, 1.2, 3.8};
-    cout << "Min (float): " <<LS(b, 3,3.8) << endl;
+    cout << "Min (float): " <<LS(b, 3,3.8) << "\n";
 
     
 }

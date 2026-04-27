@@ -14,13 +14,11 @@ class PrivateDerived : private Base {};
 
 int main() {
     PublicDerived p;
-    cout << p.x << endl;  // ✅ allowed
+    cout << p.x << "\n";  // ✅ allowed
 
     ProtectedDerived pr;
-    // cout << pr.x; ❌ error
 
     PrivateDerived pv;
-    // cout << pv.x; ❌ error
 
     return 0;
 }

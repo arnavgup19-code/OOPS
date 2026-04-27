@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Book{
@@ -53,7 +54,7 @@ public:
 
     void displayDetails(){
         for(int i=0;i<count;i++){
-            cout<<b[i].title<<" "<<b[i].author<<" "<<b[i].ISBN<<endl;
+            cout<<b[i].title<<" "<<b[i].author<<" "<<b[i].ISBN<<"\n";
         }
     }
 };

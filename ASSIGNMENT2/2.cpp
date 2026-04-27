@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <cstdlib>
 using namespace std;
 
 
@@ -14,16 +13,15 @@ private:
     
     void validateData() {
         if (rollNo <= 0) {
-            cout << "Warning: Roll No must be positive!\n";
+            cout << "Invalid roll no\n";
         }
         if (currentCGPA < 0 || currentCGPA > 4.0) {
-            cout << "Warning: CGPA must be between 0 and 4.0!\n";
+            cout << "Invalid CGPA\n";
         }
     }
 
 public:
     void addDetails() {
-        cout << "\n=== Add Student Details ===\n";
         cout << "Name: ";
         cin >> name;
         cout << "Roll No: ";
@@ -38,7 +36,6 @@ public:
     }
     
     void updateDetails() {
-        cout << "\n=== Update Student Details ===\n";
         cout << "Name: ";
         cin >> name;
         cout << "Degree: ";
@@ -60,7 +57,6 @@ public:
     }
     
     void displayDetails() {
-        cout << "\n--- Student Details ---\n";
         cout << "Name: " << name << "\n";
         cout << "Roll No: " << rollNo << "\n";
         cout << "Degree: " << degree << "\n";
@@ -70,32 +66,23 @@ public:
 };
 
 int main() {
-    cout << "========== QUESTION 2: CLASS WITH PRIVATE & PUBLIC ==========\n\n";
-    
-    cout << "DIFFERENCE BETWEEN PRIVATE AND PUBLIC:\n";
-    cout << "========================================\n";
-    cout << "PUBLIC: Members can be accessed from outside the class\n";
-    cout << "PRIVATE: Members can only be accessed within the class\n\n";
-    
-    StudentClass *sc = (StudentClass *)malloc(sizeof(StudentClass));
-    
-    new (sc) StudentClass();
+    StudentClass *sc = new StudentClass;
     
     sc->addDetails();
     sc->displayDetails();
     
-    cout << "\n--- Updating Details ---\n";
+    cout << "\n";
     sc->updateDetails();
     sc->displayDetails();
     
-    cout << "\n--- Updating CGPA ---\n";
+    cout << "\n";
     sc->updateCGPA();
     sc->displayDetails();
     
-    cout << "\n--- Updating Hostel ---\n";
+    cout << "\n";
     sc->updateHostel();
     sc->displayDetails();
     
-    free(sc);
+    delete sc;
     return 0;
 }

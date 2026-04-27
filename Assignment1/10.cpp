@@ -9,8 +9,6 @@ int main() {
         cout << "Even";
     else
         cout << "Odd";
-
-    // Using conditional operater
-    cout << endl << (n%2==0 ? "Even" : "Odd");
+    cout << "\n" << (n%2==0 ? "Even" : "Odd");
     return 0;
 }

@@ -16,10 +16,10 @@ T findMin(T arr[], int n){
 
 int main(){
     int a[] = {5, 2, 8, 1, 9};
-    cout << "Min (int): " << findMin(a, 5) << endl;
+    cout << "Min (int): " << findMin(a, 5) << "\n";
 
     float b[] = {2.5, 1.2, 3.8};
-    cout << "Min (float): " << findMin(b, 3) << endl;
+    cout << "Min (float): " << findMin(b, 3) << "\n";
 
     return 0;
 }

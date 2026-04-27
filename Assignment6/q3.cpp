@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Account{
@@ -35,7 +36,7 @@ public:
     }
 
     void displayDetails() const{
-        cout<<accNo<<" "<<balance<<" "<<type<<" "<<tid<<endl;
+        cout<<accNo<<" "<<balance<<" "<<type<<" "<<tid<<"\n";
     }
 };
 

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Vehicle
@@ -18,9 +19,9 @@ public:
 
   void displayVehicle()
   {
-    cout << "Make: " << make << endl;
-    cout << "Model: " << model << endl;
-    cout << "Year: " << year << endl;
+    cout << "Make: " << make << "\n";
+    cout << "Model: " << model << "\n";
+    cout << "Year: " << year << "\n";
   }
 };
 
@@ -39,7 +40,7 @@ public:
   void displayTruck()
   {
     displayVehicle();
-    cout << "Load Capacity: " << load_capacity << " tons" << endl;
+    cout << "Load Capacity: " << load_capacity << " tons" << "\n";
   }
 };
 
@@ -58,16 +59,13 @@ public:
   void displayRefrigeratedTruck()
   {
     displayTruck();
-    cout << "Temperature Control: " << temperature_control << " °C" << endl;
+    cout << "Temperature: " << temperature_control << "\n";
   }
 };
 
 int main()
 {
-  RefrigeratedTruck rt("Tata", "Ultra", 2022, 10.5, -5.0);
-
-  cout << "Refrigerated Truck Details:\n";
-  rt.displayRefrigeratedTruck();
+  RefrigeratedTruck rt("Tata", "Ultra", 2022, 10.5, -5.0);  rt.displayRefrigeratedTruck();
 
   return 0;
 }

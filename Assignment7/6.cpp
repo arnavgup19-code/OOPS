@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class STRING{
@@ -19,7 +20,7 @@ public:
 int main(){
     STRING a("hi"), b("hi"), c;
 
-    cout<<(a==b)<<endl;
+    cout<<(a==b)<<"\n";
     c = a + b;
     cout<<c.s;
 }

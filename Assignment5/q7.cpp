@@ -74,11 +74,9 @@ public:
       : Speedometer(s), FuelGauge(f), Thermometer(t) {}
 
   void displayDashboard()
-  {
-    cout << "---- Car Dashboard ----" << endl;
-    cout << "Speed: " << speed << " km/h" << endl;
-    cout << "Fuel Level: " << fuelLevel << " liters" << endl;
-    cout << "Temperature: " << temperature << " °C" << endl;
+  {    cout << "Speed: " << speed << " km/h" << "\n";
+    cout << "Fuel Level: " << fuelLevel << " liters" << "\n";
+    cout << "Temperature: " << temperature << "\\n";
   }
 };
 

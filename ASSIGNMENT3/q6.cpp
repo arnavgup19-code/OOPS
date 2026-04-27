@@ -10,7 +10,7 @@ int main() {
     cout << "Enter a number: ";
     cin >> num;
 
-    cout << "Cube = " << cube(num) << endl;
+    cout << "Cube = " << cube(num) << "\n";
 
     return 0;
 }

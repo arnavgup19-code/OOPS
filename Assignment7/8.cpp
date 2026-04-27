@@ -18,6 +18,6 @@ int main(){
     A a;
     a.arr[0]=10;
 
-    cout<<a[0]<<endl;
+    cout<<a[0]<<"\n";
     cout<<a[10];
 }

@@ -6,17 +6,17 @@ using namespace std;
 class Triangle {
 public:
     void isoceles_area(int breadth,int height){
-        cout << (breadth * height) / 2 << endl;
+        cout << (breadth * height) / 2 << "\n";
     }
 
     void equilateral_area(float a){
-        cout<<(1.732/4)*a*a<<endl;
+        cout<<(1.732/4)*a*a<<"\n";
     }
     
 
     void generic_area(int a, int b, int c) {
         float s = (a + b + c) / 2.0;
-        cout << sqrt(s * (s-a) * (s-b) * (s-c)) << endl;
+        cout << sqrt(s * (s-a) * (s-b) * (s-c)) << "\n";
     }
 };
 

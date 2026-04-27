@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class LibraryUser
@@ -17,9 +18,9 @@ public:
   }
   void displayUser()
   {
-    cout << "Name: " << name << endl;
-    cout << "ID: " << id << endl;
-    cout << "Contact: " << contact << endl;
+    cout << "Name: " << name << "\n";
+    cout << "ID: " << id << "\n";
+    cout << "Contact: " << contact << "\n";
   }
 };
 
@@ -38,7 +39,7 @@ public:
   void displayStudent()
   {
     displayUser();
-    cout << "Grade: " << grade << endl;
+    cout << "Grade: " << grade << "\n";
   }
 };
 
@@ -57,7 +58,7 @@ public:
   void displayTeacher()
   {
     displayUser();
-    cout << "Department: " << department << endl;
+    cout << "Department: " << department << "\n";
   }
 };
 
@@ -66,10 +67,9 @@ int main()
   Student s("Ananya", 101, "9876543210", "2nd Year");
   Teacher t("Dr. Sharma", 201, "9123456780", "Computer Science");
 
-  cout << "Student Details:\n";
   s.displayStudent();
 
-  cout << "\nTeacher Details:\n";
+  cout << "\n";
   t.displayTeacher();
 
   return 0;

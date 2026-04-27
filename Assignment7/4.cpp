@@ -8,17 +8,17 @@ public:
 
 class Engineering: public Student{
 public:
-    void show(){ cout<<"eng"<<endl; }
+    void show(){ cout<<"eng"<<"\n"; }
 };
 
 class Medicine: public Student{
 public:
-    void show(){ cout<<"med"<<endl; }
+    void show(){ cout<<"med"<<"\n"; }
 };
 
 class Science: public Student{
 public:
-    void show(){ cout<<"sci"<<endl; }
+    void show(){ cout<<"sci"<<"\n"; }
 };
 
 int main(){

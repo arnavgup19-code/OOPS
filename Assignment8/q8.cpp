@@ -11,7 +11,7 @@ template <typename T, typename U> class Pair {
         this->b = b;
     }
     void display() {
-        cout << "key: " << a << " value: " << b << endl;
+        cout << "key: " << a << " value: " << b << "\n";
     }
 };
 

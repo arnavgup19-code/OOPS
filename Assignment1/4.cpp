@@ -9,7 +9,7 @@ int main() {
     
     fahrenheit = (9 * celsius / 5) + 32;
     
-    cout << "Temperature in Fahrenheit: " << fahrenheit << endl;
+    cout << "Temperature in Fahrenheit: " << fahrenheit << "\n";
     
     return 0;
 }

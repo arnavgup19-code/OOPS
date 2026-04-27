@@ -41,11 +41,11 @@ int main() {
 
     p = &r;
     p->set_value(10, 5);
-    cout << p->calculate_area() << endl;
+    cout << p->calculate_area() << "\n";
 
     p = &t;
     p->set_value(10, 5);
-    cout << p->calculate_area() << endl;
+    cout << p->calculate_area() << "\n";
 }
 
 

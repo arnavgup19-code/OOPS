@@ -1,36 +1,31 @@
 #include <iostream>
 using namespace std;
-
 class Sample {
     int value;
 
 public:
     Sample() {
         value = 0;
-        cout << "Default constructor called\n";
     }
 
     Sample(int v) {
         value = v;
-        cout << "Parameterized constructor called\n";
     }
 
     void show() {
-        cout << "Value = " << value << endl;
+        cout << value << "\n";
     }
 
-    ~Sample() {
-        cout << "Destructor called\n";
-    }
+    ~Sample() {}
 };
 
 int main() {
     int *pInt = new int(10);
-    cout << "Dynamic int: " << *pInt << endl;
+    cout << *pInt << "\n";
     delete pInt;
 
     float *pFloat = new float(3.14);
-    cout << "Dynamic float: " << *pFloat << endl;
+    cout << *pFloat << "\n";
     delete pFloat;
 
     int *arr = new int[3];
@@ -38,10 +33,9 @@ int main() {
     arr[1] = 2;
     arr[2] = 3;
 
-    cout << "Integer array: ";
     for (int i = 0; i < 3; i++)
         cout << arr[i] << " ";
-    cout << endl;
+    cout << "\n";
 
     delete[] arr;
 

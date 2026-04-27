@@ -4,11 +4,11 @@ using namespace std;
 class Demo {
 public:
     Demo() {
-        cout << "Constructor called\n";
+        cout << "constructor\n";
     }
 
     ~Demo() {
-        cout << "Destructor called\n";
+        cout << "destructor\n";
     }
 };
 
@@ -16,7 +16,7 @@ int main() {
     Demo d1;
     Demo d2;
 
-    cout << "Inside main function\n";
+    cout << "main\n";
 
     return 0;
 }

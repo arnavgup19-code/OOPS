@@ -26,7 +26,7 @@ int main() {
 
     cout << "\nAreas:\n";
     for (int i = 0; i < 3; i++) {
-        cout << "Rectangle " << i+1 << ": " << rect[i].area() << endl;
+        cout << "Rectangle " << i+1 << ": " << rect[i].area() << "\n";
     }
 
     return 0;

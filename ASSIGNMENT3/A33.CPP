@@ -1,4 +1,3 @@
-// 3
 #include <iostream>
 using namespace std;
 
@@ -27,7 +26,7 @@ int main() {
     ClassB objB(25);
     
     int sum = addObjects(objA, objB);
-    cout << "Sum: " << sum << endl;
+    cout << "Sum: " << sum << "\n";
     
     return 0;
 }

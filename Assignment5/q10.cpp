@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Person
@@ -16,8 +17,8 @@ public:
 
   void displayPerson()
   {
-    cout << "Name: " << name << endl;
-    cout << "Address: " << address << endl;
+    cout << "Name: " << name << "\n";
+    cout << "Address: " << address << "\n";
   }
 };
 
@@ -37,8 +38,8 @@ public:
 
   void displayStaff()
   {
-    cout << "Employee ID: " << employee_id << endl;
-    cout << "Department: " << department << endl;
+    cout << "Employee ID: " << employee_id << "\n";
+    cout << "Department: " << department << "\n";
   }
 };
 
@@ -58,8 +59,8 @@ public:
 
   void displayStudent()
   {
-    cout << "Student ID: " << student_id << endl;
-    cout << "Grade: " << grade << endl;
+    cout << "Student ID: " << student_id << "\n";
+    cout << "Grade: " << grade << "\n";
   }
 };
 

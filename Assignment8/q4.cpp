@@ -20,10 +20,10 @@ T sort(T arr[], int n){
 int main(){
 
     int arr[]={4,3,5,16,8,10};
-    cout<<"sorted:"<<sort(arr, 6)<<endl;
+    cout<<"sorted:"<<sort(arr, 6)<<"\n";
 
     float b[] = {2.5, 1.2, 3.8};
-    cout << "Min (float): " <<sort(b, 3) << endl;
+    cout << "Min (float): " <<sort(b, 3) << "\n";
 
     return 0;
 

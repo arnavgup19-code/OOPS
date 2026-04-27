@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 using namespace std;
 
 
@@ -15,7 +14,6 @@ public:
     }
     
     void getdata() {
-        cout << "\n=== Enter Rectangle Data ===\n";
         cout << "Width: ";
         cin >> width;
         cout << "Height: ";
@@ -24,14 +22,10 @@ public:
     
     void calculatearea() {
         int area = width * height;
-        cout << "\n--- Rectangle Area Calculation ---\n";
-        cout << "Width: " << width << "\n";
-        cout << "Height: " << height << "\n";
-        cout << "Area of Rectangle: " << area << " square units\n";
+        cout << area << "\n";
     }
     
     void displayDimensions() {
-        cout << "\n--- Rectangle Dimensions ---\n";
         cout << "Width: " << width << "\n";
         cout << "Height: " << height << "\n";
     }
@@ -40,19 +34,17 @@ public:
 int main() {
    
     
-    Rectangle *rect = (Rectangle *)malloc(sizeof(Rectangle));
-    
-    new (rect) Rectangle();
+    Rectangle *rect = new Rectangle;
     
     rect->getdata();
     rect->displayDimensions();
     rect->calculatearea();
     
-    cout << "\n\n--- Second Rectangle ---\n";
+    cout << "\n";
     rect->getdata();
     rect->displayDimensions();
     rect->calculatearea();
     
-    free(rect);
+    delete rect;
     return 0;
 }

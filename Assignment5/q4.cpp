@@ -4,14 +4,14 @@ using namespace std;
 class A {
 public:
     void showA() {
-        cout << "Class A" << endl;
+        cout << "Class A" << "\n";
     }
 };
 
 class B : public A {
 public:
     void showB() {
-        cout << "Class B" << endl;
+        cout << "Class B" << "\n";
     }
 };
 

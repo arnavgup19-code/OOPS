@@ -10,10 +10,10 @@ class arithmetic{
         b=y;
     }
     void arithmeticOp(){
-        cout<<"Addition: "<<a+b<<endl;
-        cout<<"Multilication: "<<a*b<<endl;
-        cout<<"Subtraction: "<<a-b<<endl;
-        cout<<"Divison: "<<a/b<<endl;
+        cout<<"Addition: "<<a+b<<"\n";
+        cout<<"Multilication: "<<a*b<<"\n";
+        cout<<"Subtraction: "<<a-b<<"\n";
+        cout<<"Divison: "<<a/b<<"\n";
     }
 };
 int main(){

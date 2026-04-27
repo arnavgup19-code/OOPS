@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-
 int main() {
     ofstream f1("az.txt");
     for (char ch = 'A'; ch <= 'Z'; ch++) f1 << ch;

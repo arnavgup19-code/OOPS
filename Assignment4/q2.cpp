@@ -8,7 +8,7 @@ public:
     Rectangle(float l = 0, float b = 0) {
         length = l;
         breadth = b;
-        cout << "Constructor called\n";
+        cout << "constructor\n";
     }
 
     float area() {
@@ -16,7 +16,7 @@ public:
     }
 
     ~Rectangle() {
-        cout << "Destructor called\n";
+        cout << "destructor\n";
     }
 };
 
@@ -28,8 +28,7 @@ int main() {
     };
 
     for (int i = 0; i < 3; i++) {
-        cout << "Area of rectangle " << i + 1
-             << ": " << rect[i].area() << endl;
+        cout << rect[i].area() << "\n";
     }
 
     return 0;

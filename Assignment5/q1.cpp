@@ -6,7 +6,7 @@ class Animal
 public:
   void eat()
   {
-    cout << "Animal is eating" << endl;
+    cout << "Animal is eating" << "\n";
   }
 };
 
@@ -15,7 +15,7 @@ class Dog : public Animal
 public:
   void bark()
   {
-    cout << "Dog is barking" << endl;
+    cout << "Dog is barking" << "\n";
   }
 };
 
@@ -25,8 +25,8 @@ int main()
   a.eat();
 
   Dog d;
-  d.eat();  // inherited function
-  d.bark(); // own function
+  d.eat();  
+  d.bark(); 
 
   return 0;
 }

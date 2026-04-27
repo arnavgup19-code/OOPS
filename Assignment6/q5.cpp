@@ -16,7 +16,7 @@ public:
     }
 
     void display(){
-        cout<<r<<" + "<<i<<"i"<<endl;
+        cout<<r<<" + "<<i<<"i"<<"\n";
     }
 
     friend Complex sum(Complex,Complex);

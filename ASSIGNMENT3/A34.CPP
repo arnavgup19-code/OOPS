@@ -1,4 +1,3 @@
-// 4
 #include <iostream>
 using namespace std;
 
@@ -12,7 +11,7 @@ public:
 class ClassB {
 public:
     void display(ClassA obj) {
-        cout << "Private data of ClassA: " << obj.privateData << endl;
+        cout << "Private data of ClassA: " << obj.privateData << "\n";
     }
     void modify(ClassA &obj, int newValue) {
         obj.privateData = newValue;

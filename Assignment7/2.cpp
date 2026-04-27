@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 class Shape {
 public:
     virtual void area() {}
@@ -13,11 +12,11 @@ public:
     void set(int x) { r = x; }
 
     void area() {
-        cout << 3.14 * r * r << endl;
+        cout << 3.14 * r * r << "\n";
     }
 
     void display() {
-        cout << "Circle" << endl;
+        cout << "Circle\n";
     }
 };
 
@@ -27,11 +26,11 @@ public:
     void set(int x, int y) { l = x; b = y; }
 
     void area() {
-        cout << l * b << endl;
+        cout << l * b << "\n";
     }
 
     void display() {
-        cout << "Rectangle" << endl;
+        cout << "Rectangle\n";
     }
 };
 
@@ -41,11 +40,11 @@ public:
     void set(int x, int y) { b = x; h = y; }
 
     void area() {
-        cout << (b * h) / 2 << endl;
+        cout << (b * h) / 2 << "\n";
     }
 
     void display() {
-        cout << "Triangle" << endl;
+        cout << "Triangle\n";
     }
 };
 

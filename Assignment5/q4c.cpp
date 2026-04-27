@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
-
 class A {
 public:
     void showA() {
-        cout << "Class A" << endl;
+        cout << "Class A\n";
     }
 };
 

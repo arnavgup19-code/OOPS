@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <cstdlib>
 using namespace std;
 
 
@@ -12,7 +11,6 @@ struct Student {
     float currentCGPA;
     
     void addDetails() {
-        cout << "\n=== Add Student Details ===\n";
         cout << "Name: ";
         cin >> name;
         cout << "Roll No: ";
@@ -26,7 +24,6 @@ struct Student {
     }
     
     void updateDetails() {
-        cout << "\n=== Update Student Details ===\n";
         cout << "Name: ";
         cin >> name;
         cout << "Degree: ";
@@ -46,7 +43,6 @@ struct Student {
     }
     
     void displayDetails() {
-        cout << "\n--- Student Details ---\n";
         cout << "Name: " << name << "\n";
         cout << "Roll No: " << rollNo << "\n";
         cout << "Degree: " << degree << "\n";
@@ -57,23 +53,23 @@ struct Student {
 
 int main() {
     
-    Student *s = (Student *)malloc(sizeof(Student));
+    Student *s = new Student;
     
     s->addDetails();
     s->displayDetails();
     
-    cout << "\n--- Updating Details ---\n";
+    cout << "\n";
     s->updateDetails();
     s->displayDetails();
     
-    cout << "\n--- Updating CGPA ---\n";
+    cout << "\n";
     s->updateCGPA();
     s->displayDetails();
     
-    cout << "\n--- Updating Hostel ---\n";
+    cout << "\n";
     s->updateHostel();
     s->displayDetails();
     
-    free(s);
+    delete s;
     return 0;
 }

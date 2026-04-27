@@ -18,7 +18,7 @@ class Student : public Person
 public:
   void displayAge()
   {
-    cout << "Age is: " << age << endl;
+    cout << "Age is: " << age << "\n";
   }
 };
 

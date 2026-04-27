@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 template <typename T> class Array {
     T *arr;
     int n;
@@ -17,7 +16,7 @@ template <typename T> class Array {
     void display() {
         for (int i = 0; i < n; i++)
             cout << arr[i] << " ";
-        cout << endl;
+        cout << "\n";
     }
     ~Array() {
         delete[] arr;

@@ -10,10 +10,10 @@ int main() {
     cout << "Enter second number: ";
     cin >> num2;
     
-    cout << "\nAddition: " << num1 + num2 << endl;
-    cout << "Subtraction: " << num1 - num2 << endl;
-    cout << "Multiplication: " << num1 * num2 << endl;
-    cout << "Division: " << num1 / num2 << endl;
+    cout << "\nAddition: " << num1 + num2 << "\n";
+    cout << "Subtraction: " << num1 - num2 << "\n";
+    cout << "Multiplication: " << num1 * num2 << "\n";
+    cout << "Division: " << num1 / num2 << "\n";
     
     return 0;
 }

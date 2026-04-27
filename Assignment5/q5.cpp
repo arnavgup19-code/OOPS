@@ -3,22 +3,22 @@ using namespace std;
 class Base {
 public:
     Base() {
-        cout << "Base class constructor called" << endl;
+        cout << "Base constructor\n";
     }
 
     ~Base() {
-        cout << "Base class destructor called" << endl;
+        cout << "Base destructor\n";
     }
 };
 
 class Derived : public Base {
 public:
     Derived() {
-        cout << "Derived class constructor called" << endl;
+        cout << "Derived constructor\n";
     }
 
     ~Derived() {
-        cout << "Derived class destructor called" << endl;
+        cout << "Derived destructor\n";
     }
 };
 

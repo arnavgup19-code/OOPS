@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstdlib>
+#include <string>
 using namespace std;
 
 
@@ -10,18 +10,17 @@ private:
     
     void verifyBalance() {
         if (balance < 0) {
-            cout << "ALERT: Negative balance detected!\n";
+            cout << "Negative balance\n";
         }
     }
     
     void applyInterest() {
         float interest = balance * 0.05;
         balance = balance + interest;
-        cout << "Interest applied. New balance: " << balance << "\n";
     }
     
     void logTransaction(string type, float amount) {
-        cout << "[LOG] Transaction Type: " << type << ", Amount: " << amount << "\n";
+        cout << type << ": " << amount << "\n";
     }
 
 public:
@@ -33,7 +32,6 @@ public:
     void createAccount(int accNo, float initialBalance) {
         accountNumber = accNo;
         balance = initialBalance;
-        cout << "Account created successfully!\n";
         cout << "Account Number: " << accountNumber << "\n";
         cout << "Initial Balance: " << balance << "\n";
     }
@@ -61,7 +59,6 @@ public:
     }
     
     void applyYearlyInterest() {
-        cout << "Applying yearly interest...\n";
         applyInterest();
     }
     
@@ -72,39 +69,30 @@ public:
 };
 
 int main() {
-    cout << "========== QUESTION 3: PRIVATE FUNCTION CALLED FROM PUBLIC ==========\n\n";
-    
-    BankAccount *acc = (BankAccount *)malloc(sizeof(BankAccount));
-    
-    new (acc) BankAccount();
+    BankAccount *acc = new BankAccount();
     
     acc->createAccount(12345, 5000);
     cout << "\n";
     
-    cout << "--- Deposit 1000 ---\n";
     acc->deposit(1000);
     acc->displayBalance();
     cout << "\n";
     
-    cout << "--- Deposit 500 ---\n";
     acc->deposit(500);
     acc->displayBalance();
     cout << "\n";
     
-    cout << "--- Withdraw 200 ---\n";
     acc->withdraw(200);
     acc->displayBalance();
     cout << "\n";
     
-    cout << "--- Apply Yearly Interest ---\n";
     acc->applyYearlyInterest();
     acc->displayBalance();
     cout << "\n";
     
-    cout << "--- Withdraw 1000 ---\n";
     acc->withdraw(1000);
     acc->displayBalance();
     
-    free(acc);
+    delete acc;
     return 0;
 }

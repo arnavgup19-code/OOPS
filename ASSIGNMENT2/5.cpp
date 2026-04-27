@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 using namespace std;
 
 
@@ -47,58 +46,42 @@ public:
 };
 
 int main() {
-
+    Complex *c1 = new Complex();
+    Complex *c2 = new Complex();
+    Complex *sum = new Complex();
     
-    cout << "--- Method 1: Using setComplex() ---\n";
-    Complex *c1 = (Complex *)malloc(sizeof(Complex));
-    Complex *c2 = (Complex *)malloc(sizeof(Complex));
-    Complex *sum = (Complex *)malloc(sizeof(Complex));
-    
-    new (c1) Complex();
-    new (c2) Complex();
-    new (sum) Complex();
-    
-    cout << "Enter first complex number:\n";
+    cout << "Enter first number:\n";
     float r1, i1;
-    cout << "Real part: ";
+    cout << "real: ";
     cin >> r1;
-    cout << "Imaginary part: ";
+    cout << "imaginary: ";
     cin >> i1;
     c1->setComplex(r1, i1);
     
-    cout << "\nEnter second complex number:\n";
+    cout << "Enter second number:\n";
     float r2, i2;
-    cout << "Real part: ";
+    cout << "real: ";
     cin >> r2;
-    cout << "Imaginary part: ";
+    cout << "imaginary: ";
     cin >> i2;
     c2->setComplex(r2, i2);
     
-    cout << "\n--- Display Complex Numbers ---\n";
-    cout << "First Complex Number: ";
     c1->displayComplex();
-    cout << "Second Complex Number: ";
     c2->displayComplex();
     
-    cout << "\n--- Sum of Complex Numbers ---\n";
     *sum = c1->addComplex(*c2);
-    cout << "Sum: ";
     sum->displayComplex();
     
-    free(c1);
-    free(c2);
-    free(sum);
+    delete c1;
+    delete c2;
+    delete sum;
     
-    cout << "\n\n--- Method 2: Using Constructor ---\n";
     Complex c3(5, 3);
     Complex c4(2, 4);
     Complex c5 = c3 + c4;
     
-    cout << "Complex 1: ";
     c3.displayComplex();
-    cout << "Complex 2: ";
     c4.displayComplex();
-    cout << "Sum: ";
     c5.displayComplex();
     
     return 0;

@@ -15,9 +15,9 @@ int main() {
     cout << "Enter a character: ";
     cin >> character;
     
-    cout << "\nInteger: " << integer << endl;
-    cout << "Decimal: " << decimal << endl;
-    cout << "Character: " << character << endl;
+    cout << "\nInteger: " << integer << "\n";
+    cout << "Decimal: " << decimal << "\n";
+    cout << "Character: " << character << "\n";
     
     return 0;
 }

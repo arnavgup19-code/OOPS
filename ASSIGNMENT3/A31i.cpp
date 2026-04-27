@@ -9,7 +9,7 @@ public:
     }
 
     void display() {
-        cout << "Roll number: " << roll << endl;
+        cout << "Roll number: " << roll << "\n";
     }
 };
 

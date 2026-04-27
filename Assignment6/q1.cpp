@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Book {
@@ -34,10 +35,9 @@ public:
         }
 
         for (int i = 0; i < count; i++) {
-            cout << "Title: " << books[i].title << endl;
-            cout << "Author: " << books[i].author << endl;
-            cout << "ISBN: " << books[i].ISBN << endl;
-            cout << "----------------------\n";
+            cout << "Title: " << books[i].title << "\n";
+            cout << "Author: " << books[i].author << "\n";
+            cout << "ISBN: " << books[i].ISBN << "\n";
         }
     }
 
@@ -74,12 +74,11 @@ int main() {
 
     lib.addNewBook(t2, a2, i2);
 
-    cout << "Books in Library:\n";
     lib.display();
 
     lib.removeBooks(i1);
 
-    cout << "\nAfter removal:\n";
+    cout << "\n";
     lib.display();
 
     return 0;

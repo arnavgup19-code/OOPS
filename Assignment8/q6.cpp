@@ -38,8 +38,8 @@ int main() {
     float_stack.push(3.5);
     float_stack.push(7.2);
 
-    cout << float_stack.pop() << endl;
-    cout << float_stack.pop() << endl;
+    cout << float_stack.pop() << "\n";
+    cout << float_stack.pop() << "\n";
 
     return 0;
 }

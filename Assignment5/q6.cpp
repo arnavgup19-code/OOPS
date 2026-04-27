@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class Book
@@ -17,9 +18,9 @@ public:
   }
   void displayBook()
   {
-    cout << "Title: " << title << endl;
-    cout << "Author: " << author << endl;
-    cout << "Price: " << price << endl;
+    cout << "Title: " << title << "\n";
+    cout << "Author: " << author << "\n";
+    cout << "Price: " << price << "\n";
   }
 };
 
@@ -37,17 +38,16 @@ public:
   void displayTextbook()
   {
     displayBook();
-    cout << "Subject: " << subject << endl;
+    cout << "Subject: " << subject << "\n";
   }
 };
 
 int main()
 {
   Book b("The Alchemist", "Paulo Coelho", 299.0);
-  cout << "General Book Details:" << endl;
   b.displayBook();
 
-  cout << "\nTextbook Details:" << endl;
+  cout << "\n";
 
   Textbook t("Engineering Mathematics", "B.S. Grewal", 599.0, "Mathematics");
   t.displayTextbook();

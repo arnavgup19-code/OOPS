@@ -19,10 +19,10 @@ T findmax(T arr[], int n){
 int main(){
 
     int arr[]={2,5,6,1,8};
-    cout<<"max element:"<<findmax(arr,5)<<endl;
+    cout<<"max element:"<<findmax(arr,5)<<"\n";
 
     float b[] = {2.5, 1.2, 3.8};
-    cout << "Min (float): " << findmax(b, 3) << endl;
+    cout << "Min (float): " << findmax(b, 3) << "\n";
 
     return 0;
 

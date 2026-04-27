@@ -33,9 +33,9 @@ int main() {
     Rectangle r2(5);    
     Rectangle r3(4, 6);  
 
-    cout << "Area of r1: " << r1.area() << endl;
-    cout << "Area of r2: " << r2.area() << endl;
-    cout << "Area of r3: " << r3.area() << endl;
+    cout << "Area of r1: " << r1.area() << "\n";
+    cout << "Area of r2: " << r2.area() << "\n";
+    cout << "Area of r3: " << r3.area() << "\n";
 
     return 0;
 }
